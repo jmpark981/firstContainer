@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>설문 페이지</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+</head>
+    
+<body>
+    <!-- Start your project here-->
+    <!--페이지 메인 영역 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #036B3F;">
+            <a class="navbar-brand" href="index.html">KUL matching hat</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggler">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">시작</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">설문</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="result.html">결과</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown">서비스 개요</a>
+                        <div class="dropdown-menu dropdown-primary"
+                             aria-labelledby="dropdown">
+                            <a class="dropdown-item" href="qna.html">QnA</a>
+                            <a class="dropdown-item" href="creator.html">만든이</a>
+                        </div>
+                    </li>
+                        
+                </ul>
+            </div>
+        </nav> 
+    </header>
+    
+    <main>
+        <div class="form-container mt-4">
+            <form>
+                <!--나이-->
+                <div>
+                    <label for="fage">
+                        <font size="4px">
+                            <strong>1. 나이</strong>
+                        </font>
+                    </label>
+                    <br>
+                    <input type="text" id="fage" name="fage" placeholder="숫자만" required>
+                </div>
+                <br>
+
+                <!--성별-->
+                <div>
+                    <label for="fsex">
+                        <font size="4px">
+                            <strong>2. 성별</strong>
+                        </font>
+                    </label>
+                    <br>
+                    <label>남자</label>
+                    <input type="radio" id="fsex" name="fsex" value="M">
+                    <label>여자</label>
+                    <input type="radio" name="fsex" name="fsex" value="W">
+                </div>
+                <br>
+
+                <!--단과대-->
+                <div>
+                    <label for="fcollege_of">
+                        <font size="4px">
+                            <strong>2. 단과대</strong>
+                        </font>
+                    </label>
+                    <br>
+                    <select id="fcollege_of" name="fcollege_of">
+                        <option value="경영대">경영대</option>
+                        <option value="사과대">사과대</option>
+                        <option value="예디대">예디대</option>
+                        <option value="공과대">공과대</option>
+                        <option value="융기원">융기원</option>
+                    </select>
+                </div>
+                <br>
+
+                <!--식사 해결-->
+                <div>
+                    <label for="f_how_eat">
+                    <font size="4px">
+                            <strong>3. 식사해결 방법</strong>
+                        </font>
+                    </label>
+                    <br>
+                    <label>기숙사 식당</label>
+                    <input type="checkbox" id="f_how_eat" name="f_how_eat" value="기숙사 식당">
+                    <label>외식</label>
+                    <input type="checkbox" id="f_how_eat" name="f_how_eat" value="외식">
+                    <label>기숙사 안</label>
+                    <input type="checkbox" id="f_how_eat" name="f_how_eat" value="기숙사 안">
+
+
+                </div>
+                <br>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- End your project here-->
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+  
+</body>
+</html>
